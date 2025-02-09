@@ -1,0 +1,64 @@
+@use "vars" as v;
+
+.card-li {
+
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: space-between; 
+    
+    @media screen and (min-width: v.$breakpoint-md) {
+        gap: 60px;
+    }
+    
+
+    // .card-li__item
+
+    &__item {
+
+        flex: 1 1 100%;   
+        display: flex;
+        flex-direction: column; 
+    
+        @media screen and (min-width: v.$breakpoint-md) {
+            flex: 1 1 35%;
+        }
+        @media screen and (min-width: v.$breakpoint-lg) {
+            flex: 1 1 25%;
+        }
+    }
+
+    // .card-li__icon
+
+    &__icon {
+       width: 92px;
+       height: 92px;
+       display: flex;
+       background: v.$basic-white;
+       border-radius: 24px;
+       justify-content: center;
+       align-items: center;
+    }
+
+    &__icon svg {
+        width: 64px;
+        height: 64px;
+    }
+
+    // .card-li__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        color: v.$active-color;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: v.$basic-white;
+        margin-bottom: 30px;
+    }
+}
+
