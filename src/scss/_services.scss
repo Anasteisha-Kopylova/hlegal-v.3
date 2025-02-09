@@ -4,7 +4,7 @@
 
     // .services__title
 
-    &__title {
+    &__link {
         font-weight: 700;
         color: v.$active-color;
         text-transform: uppercase;
@@ -13,16 +13,16 @@
         display: inline-flex;
         align-items: center;
     }
-    .services__title svg {
+    &__link svg {
         margin-left: 2px;
         stroke: v.$active-color; 
         transition: stroke 0.3s ease;
       }
 
-    &__title:hover {
+    &__link:hover {
         color: v.$accent-color;
     }
-    .services__title:hover svg {
+    &__link:hover svg {
         stroke: v.$accent-color; 
       }
 

@@ -1,0 +1,28 @@
+@use "vars" as v;
+
+.shadow {
+    height: 20px;
+}
+.shadow__top {
+    //position: relative;
+    height: 10px;
+    background-color:v.$shadow-dark;
+    margin: 0 20px;
+    border-radius: 0 0 v.$radius-md v.$radius-md;
+}
+
+// .shadow__top::before{
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     background-color: red($color: #000000);
+//     top: 0;
+//     width: 100%;
+// }
+
+.shadow__bottom {
+    height: 10px;
+    background-color: v.$shaow-light;
+    margin: 0 40px;
+    border-radius: 0 0 v.$radius-md v.$radius-md;
+}

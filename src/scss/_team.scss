@@ -49,6 +49,26 @@
   }
 
   &__inner-link {
+    font-weight: 700;
+        color: v.$active-color;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        display: inline-flex;
+        align-items: center;
+  }
+
+  &__inner-link:hover {
+    color: v.$accent-color;
+  }
+  &__inner-link:hover svg {
+    stroke: v.$accent-color; 
+  }
+
+  &__inner-link svg {
+    margin-left: 2px;
+    stroke: v.$active-color; 
+    transition: stroke 0.3s ease;
   }
 
   &__inner-title {

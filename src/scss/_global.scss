@@ -11,6 +11,7 @@ a {
 
 .wrapper {
   background: v.$gradient-supersoft;
+  border-radius: 0 0 v.$radius-md v.$radius-md;
 }
 
 .container {
@@ -61,3 +62,4 @@ a {
     background: v.$text-color;
   }
 }
+
