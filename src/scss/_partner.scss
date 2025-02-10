@@ -1,0 +1,91 @@
+@use "vars" as v;
+
+.partner {
+
+    padding: 30px;
+    
+   
+
+    // .partner__bio
+
+    &__bio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    // .partner__photo
+
+    &__photo {
+        
+    }
+
+    // .partner__details
+
+    &__details {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+
+    // .partner__name
+
+    &__name {
+        font-weight: 700;
+        font-size: 30px;
+        background: v.$gradient-red-text;  
+        -webkit-background-clip: text;   
+        background-clip: text;          
+        color: transparent; 
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    // .partner__data
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    // .partner__position
+
+    &__position {
+        font-weight: 400;
+        color: v.$text-color;
+    }
+
+    // .partner__mail
+
+    &__mail {
+        color: v.$active-color;
+        font-weight: 400;
+    }
+
+    // .partner__social
+
+    &__social {
+        color: v.$active-color;
+        font-weight: 400;
+    }
+
+    // .partner__information
+
+    &__information {
+      margin-top: 30px;
+    }
+
+    // .partner__title
+
+    &__title {
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
+

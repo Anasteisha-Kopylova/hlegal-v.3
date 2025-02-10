@@ -23,6 +23,20 @@ import '../scss/style.scss';
 })();
 
 (function () {
+	const burgerOpenMenu = document.querySelector('.header-2__box-burger');
+	const navigationMenu = document.querySelector('.header-2__nav');
+	const burgerCloseMenu = document.querySelector('.header-2__nav-close');
+
+	burgerOpenMenu.addEventListener("click", () => {
+		navigationMenu.classList.add('active');
+	});
+
+	burgerCloseMenu.addEventListener("click", () => {
+		navigationMenu.classList.remove('active');
+	});
+})();
+
+(function () {
 	const tabsItem = document.querySelectorAll('.tabs__list-item');
 	const tabsContent = document.querySelectorAll('.tabs__content-item');
 
@@ -59,17 +73,17 @@ const swiper = new Swiper('.team__swiper', {
 
 // POPUP
 
-const myPopup = new Popup({
-	id: "my-popup",
-	title: "My First Popup",
-	content: `
-			An example popup.
-			Supports multiple lines.`,
-});
+// const myPopup = new Popup({
+// 	id: "my-popup",
+// 	title: "My First Popup",
+// 	content: `
+// 			An example popup.
+// 			Supports multiple lines.`,
+// });
 
 
-const teamPopup = document.querySelector('.header__address');
+// const teamPopup = document.querySelector('.header__address');
 
-teamPopup.addEventListener("click", () => {
-	myPopup.show();
-})
+// teamPopup.addEventListener("click", () => {
+// 	myPopup.show();
+// })

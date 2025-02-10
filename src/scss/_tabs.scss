@@ -50,6 +50,9 @@
     &.active {
       @include v.text-gradient;
     }
+    &:hover{
+      color: v.$accent-color;
+    }
   }
 
   &__content {

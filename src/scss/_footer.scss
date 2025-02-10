@@ -50,6 +50,7 @@
         color: v.$active-color;
         margin-bottom: 20px;
         text-align: center;
+        display: block;
 
 
         @media screen and (min-width: v.$breakpoint-md) {
